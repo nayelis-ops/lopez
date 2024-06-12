@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h>METODO DE CRAMER</h><br>
+<h2>FORMA GENERAL DEL SISTEMA DE ECUACIONES DE 2x2</h2><br>
+
+a1x1 + b1y1 = c1 <br>
+a2x2 + b2y2 = c2 <br>
+
+<p> FAVOR DE CAPTURAR LOS VALORES a1,a2,b1,b2,c1,c2</p>
+<br>
+<input type="number" name="" placeholder="a1" id="a1">x1 + 
+<input type="number" name="" placeholder="b1" id="b1">x1 =
+<input type="number" name="" placeholder="c1" id="c1">
+<br>
+<input type="number" name="" placeholder="a2" id="a2">x1 +
+<input type="number" name="" placeholder="b2" id="b2">x1 =
+<input type="number" name="" placeholder="c2" id="c2">
+<button onclick="solve()">resolver</button>
+<h1>resultado</h1>
+<p>
+	x = <input type="text" id="x-result">
+</p>
+<script>
+	function solve() {
+    const a1 =parseFloat(document.getElementsById('a1').value);
+    const b1 =parseFloat(document.getElementsById('b1').value);
+    const c2 =parseFloat(document.getElementsById('c1').value);
+    const a2 =parseFloat(document.getElementsById('a2').value);
+    const b2 =parseFloat(document.getElementsById('b2').value);
+    const c2 =parseFloat(document.getElementsById('c2').value);
+
+    const D= a1 + b2 - a2 * b1:
+    const Dx= c1 + b2 - c2 *b1;
+    const Dy = a1 + c2 - a2 * c1;
+
+     if (D === 0) {
+     	document.getElementsById(`x-resul`).value = x;
+     	document.getElementsById(`y-resul`).value = y;
+     }
+    
+}
+	
+</script>
+
+</body>
+</html>
